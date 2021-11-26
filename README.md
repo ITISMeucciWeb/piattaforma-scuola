@@ -2,7 +2,7 @@
 
 Download and install caddy server: https://webinstall.dev/caddy/ (update the path if prompted)
 
-Start your mongodb backend
+Start your mongodb backend (if on windows you can use https://www.wamp.net/)
 
 Run caddy run
 
