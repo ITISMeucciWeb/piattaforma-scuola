@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/piattaforma-scuola.iml" filepath="$PROJECT_DIR$/piattaforma-scuola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piattaforma-scuola-backend/piattaforma-scuola-backend.iml" filepath="$PROJECT_DIR$/piattaforma-scuola-backend/piattaforma-scuola-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/piattaforma-scuola-frontend/piattaforma-scuola-frontend.iml" filepath="$PROJECT_DIR$/piattaforma-scuola-frontend/piattaforma-scuola-frontend.iml" />
+    </modules>
+  </component>
+</project>
