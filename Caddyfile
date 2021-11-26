@@ -2,10 +2,10 @@
     local_certs
 }
 
-api.testingdreaming.duckdns.org {
+api.localhost {
     reverse_proxy 127.0.0.1:3000
 }
 
-testingdreaming.duckdns.org {
-    reverse_proxy 127.0.0.1:8080
+localhost {
+    reverse_proxy 127.0.0.1:8081
 }
