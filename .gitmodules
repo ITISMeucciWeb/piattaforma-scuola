@@ -1,0 +1,6 @@
+[submodule "piattaforma-scuola-backend"]
+	path = piattaforma-scuola-backend
+	url = https://github.com/ITISMeucciWeb/piattaforma-scuola-backend
+[submodule "piattaforma-scuola-frontend"]
+	path = piattaforma-scuola-frontend
+	url = https://github.com/ITISMeucciWeb/piattaforma-scuola-frontend
