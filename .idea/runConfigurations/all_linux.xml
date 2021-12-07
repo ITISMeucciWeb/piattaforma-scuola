@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="all" type="CompoundRunConfigurationType">
+  <configuration default="false" name="all linux" type="CompoundRunConfigurationType">
     <toRun name="serve" type="js.build_tools.npm" />
     <toRun name="start" type="js.build_tools.npm" />
     <toRun name="caddy" type="ShConfigurationType" />
