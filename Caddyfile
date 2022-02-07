@@ -7,5 +7,5 @@ api.localhost {
 }
 
 localhost {
-    redir https://127.0.0.1:444{uri}
+    reverse_proxy 127.0.0.1:3001
 }
