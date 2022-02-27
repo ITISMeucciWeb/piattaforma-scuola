@@ -1,4 +1,6 @@
-# piattaforma-scuolapiattaforma
+# piattaforma-scuolapiattaforma 
+
+### Tested on node 16.14.0
 
 Download and install caddy server: https://webinstall.dev/caddy/ (update the path if prompted)
 
