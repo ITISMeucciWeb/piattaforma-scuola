@@ -1,6 +1,6 @@
 # piattaforma-scuolapiattaforma 
 
-### Tested on node 16.14.0
+### Tested on node 16.14.1
 
 Download and install elasticsearch
 
