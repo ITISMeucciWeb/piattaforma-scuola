@@ -2,8 +2,6 @@
 
 ### Tested on node 16.14.1
 
-Download and install elasticsearch
-
 Download and install caddy server: https://webinstall.dev/caddy/ (update the path if prompted)
 
 Start your mongodb backend (if on windows you can use https://www.wamp.net/)
