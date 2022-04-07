@@ -1,8 +1,10 @@
 tasks:
   - init: sh syncmaster.sh && sh install.sh
-    command: sudo caddy run
+  - command: cd piattaforma-scuola-backend && yarn start:dev
+  - command: cd piattaforma-scuola-frontend && yarn dev
 ports:
-  - port: 443
+  - port: 3000
+  - port: 3001
     onOpen: open-preview
 image:
   file: .gitpod.Dockerfile
