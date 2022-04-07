@@ -1,11 +1,23 @@
 tasks:
-  - init: cd piattaforma-scuola-frontend ; git fetch origin ; git checkout master ; git merge origin/master ; yarn install
-    command: cd piattaforma-scuola-frontend ; yarn dev --host
-  - init: cd piattaforma-scuola-backend ; git fetch origin ; git checkout master ; git merge origin/master ; yarn install ; cp example.env .env
-    command: cd piattaforma-scuola-backend && yarn start:dev
+  - before: cd piattaforma-scuola-frontend
+    init: >
+     git fetch origin 
+     ; git checkout master 
+     ; git merge origin/master 
+     ; yarn install
+     ; gp sync-done frontendInstall
+    command: yarn dev --host
+  - before: cd piattaforma-scuola-backend
+    init: >
+     cd piattaforma-scuola-backend
+     ; git fetch origin ; git checkout master
+     ; git merge origin/master
+     ; gp sync-await frontendInstall
+     ; yarn install
+     ; cp example.env .env
+    command: cd piattaforma-scuola-backend ; yarn start:dev
 ports:
   - port: 3000
   - port: 3001
     onOpen: open-preview
-image:
-  file: .gitpod.Dockerfile
+image: .gitpod.Dockerfile
