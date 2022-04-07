@@ -15,7 +15,9 @@ tasks:
      ; gp sync-await frontendInstall
      ; yarn install
      ; cp example.env .env
-    command: cd piattaforma-scuola-backend ; yarn start:dev
+    command: >
+      mongod &
+      yarn start:dev
 ports:
   - port: 3000
   - port: 3001
