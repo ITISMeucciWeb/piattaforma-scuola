@@ -1,0 +1,8 @@
+tasks:
+  - init: sh syncmaster.sh && sh install.sh
+    command: sudo caddy run
+ports:
+  - port: 443
+    onOpen: open-preview
+image:
+  file: .gitpod.Dockerfile
