@@ -1,7 +1,7 @@
 tasks:
-  - init: cd piattaforma-scuola-frontend && git fetch origin && git checkout master && git merge origin/master && yarn install
-    command: cd piattaforma-scuola-frontend && yarn dev --host
-  - init: cd piattaforma-scuola-backend && git fetch origin && git checkout master && git merge origin/master && yarn install
+  - init: cd piattaforma-scuola-frontend ; git fetch origin ; git checkout master ; git merge origin/master ; yarn install
+    command: cd piattaforma-scuola-frontend ; yarn dev --host
+  - init: cd piattaforma-scuola-backend ; git fetch origin ; git checkout master ; git merge origin/master ; yarn install ; cp example.env .env
     command: cd piattaforma-scuola-backend && yarn start:dev
 ports:
   - port: 3000
