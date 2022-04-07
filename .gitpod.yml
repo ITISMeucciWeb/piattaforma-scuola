@@ -20,4 +20,4 @@ ports:
   - port: 3000
   - port: 3001
     onOpen: open-preview
-image: .gitpod.Dockerfile
+image: gitpod/workspace-mongodb
