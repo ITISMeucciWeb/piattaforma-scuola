@@ -1,7 +1,8 @@
 tasks:
-  - init: sh syncmaster.sh && sh install.sh
-  - command: cd piattaforma-scuola-backend && yarn start:dev
-  - command: cd piattaforma-scuola-frontend && yarn dev
+  - init: cd piattaforma-scuola-frontend && git fetch origin && git checkout master && git merge origin/master && yarn install
+    command: cd piattaforma-scuola-frontend && yarn dev
+  - init: cd piattaforma-scuola-backend && git fetch origin && git checkout master && git merge origin/master && yarn install
+    command: cd piattaforma-scuola-backend && yarn start:dev
 ports:
   - port: 3000
   - port: 3001
